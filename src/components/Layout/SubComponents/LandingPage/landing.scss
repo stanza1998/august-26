@@ -1,0 +1,99 @@
+.landingPage {
+  .heading {
+    font-size: 20px;
+    margin-bottom: 7px;
+    font-weight: 500;
+    font-family: a;
+  }
+
+  .sub-heading {
+    font-family: a;
+    font-weight: 300;
+  }
+
+  .btn {
+    background-color: transparent;
+    color: white;
+    border-radius: 30px;
+    border: solid 3px white
+  }
+
+  .center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .scrollDownBtn {
+
+
+    .about {
+      margin: auto;
+      width: 50%;
+      padding: 10px;
+    }
+
+    background: transparent;
+
+    ul {
+      display: inline;
+    }
+
+    li {
+      text-decoration: none;
+    }
+
+    .imgm1 {
+      height: 50px;
+      margin-top: 100px;
+    }
+
+    .imgm2 {
+      margin-top: 3rem;
+      height: 150px;
+      animation: opacity 2s linear infinite;
+      margin-left: 6rem;
+    }
+
+    .imgm3 {
+      height: 50px;
+      animation: opacity1 2s linear infinite;
+    }
+
+    @keyframes opacity {
+      0% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 70%;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes opacity1 {
+      0% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 90%;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+
+  .services {
+    text-transform: uppercase;
+  }
+
+  .border {
+    
+  }
+}

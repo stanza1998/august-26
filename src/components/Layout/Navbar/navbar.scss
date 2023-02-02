@@ -1,0 +1,56 @@
+.navigation {
+    nav {
+        .center {
+            ul {
+                li {
+                    a {
+                        color: white;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    &.uk-sticky-below {
+        nav {
+            .center {
+                ul {
+                    li {
+                        a {
+                            color: black;
+                        }
+                    }
+                }
+                .burgur{
+                    color:white
+                }
+            }
+
+        }
+    }
+
+    .loginBtn {
+        width: 5rem;
+        height: 3rem;
+        background: transparent;
+        border-color: #d4a74f;
+        color: #d4a74f;
+        font-weight: 800;
+        border-radius: 5rem;
+
+    }
+
+    .loginBtn:hover {
+        width: 5rem;
+        height: 3rem;
+        background: #d4a74f;
+        border-color: #d4a74f;
+        color: white;
+        border-radius: 5rem;
+
+    }
+
+}

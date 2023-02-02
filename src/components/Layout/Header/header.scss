@@ -1,0 +1,48 @@
+.header {
+    div.demo {
+        width: 100%;
+        text-align: center;
+        height: 100%;
+    }
+    .a:hover{
+        border: solid 2px white
+    }
+
+    div.demo span {
+        display: flex;
+        text-align: center;
+    }
+
+    .btn {
+        width: 8rem;
+        height: 3rem;
+        background: transparent;
+        border-color: #d4a74f;
+        color: #d4a74f;
+        font-weight: 800;
+        border-radius: 5rem;
+        margin-top: 1.5rem;
+        margin-left: -2rem;
+    }
+
+    .btn:hover {
+        width: 8rem;
+        height: 3rem;
+        background: #d4a74f;
+        border-color: #d4a74f;
+        color: white;
+        border-radius: 5rem;
+    }
+
+    .search-box {}
+
+    .uk-search-input {
+        padding: 1.5rem;
+        width: 16rem;
+        border-bottom: solid 2px white;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        color: white;
+    }
+}
