@@ -1,0 +1,41 @@
+.admin {
+    .listbtn {
+        color: #17532d;
+        font-size: "28px";
+
+    }
+
+    .text {
+        font-weight: 800
+    }
+
+    .list:hover {
+        background: #d4a74f;
+        color: white
+    }
+
+    .listbtn:hover {
+        background: #d4a74f;
+        color: white
+    }
+
+    .icon:hover {
+
+        color: white
+    }
+
+    .toolbar {
+        width: 100%;
+        overflow: hidden;
+        clear: both;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -4rem;
+        margin-bottom: 1rem;
+        margin-right: 5rem;
+        // border: 1px red solid;
+    }
+}

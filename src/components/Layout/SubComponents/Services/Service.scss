@@ -1,12 +1,41 @@
+@import '../../../../App.scss';
+
 .services {
-    .text {
-        margin: auto;
-        width: 50%;
-        padding: 10px;
+
+    .container-fluid {
+        padding: 9rem;
+
     }
 
-    ul {
-        margin-left: 20px;
-        margin-top: 10px;
+    .border-line {
+        border-top: solid red 1px;
+        margin-bottom: 3rem;
+        margin-top: -4rem;
+
     }
+
+    .header {
+        font-family: $heading-font;
+        font-size: 2rem;
+    }
+
+    .list {
+        font-family: $paragraph-font;
+        font-size: 1rem;
+    }
+
+    .img {
+        border-radius: 2rem;
+    }
+
+    .header-container {
+
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .list {
+        text-decoration: none;
+    }
+
 }

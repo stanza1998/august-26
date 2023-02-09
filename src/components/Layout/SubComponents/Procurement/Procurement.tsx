@@ -25,12 +25,10 @@ export const Procurement = () => {
                     </div>
                 </section>
             </motion.div>
-            <div className="bg-white p-5">
+            <div className="bg-white" style={{ padding: "8rem" }}>
                 <h1 className="">Available Tenders</h1>
                 <p className="text-danger ">No  available Tenders at the moment</p>
             </div>
-
-
             <section className="p-5 d-none d-lg-block" style={{ background: "#d4a74f" }}>
                 <div className="form">
                     <h2 className="text-center" style={{ color: "#17532c" }}> REGISTER YOUT EMAIL </h2>

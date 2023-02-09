@@ -1,8 +1,18 @@
 import react from "react"
+import { useNavigate } from "react-router-dom"
 import "../Footer/footer.scss"
 
 
 export const Footer = () => {
+    const navigate = useNavigate()
+
+    const login = () => {
+        window.scrollTo(0,0)
+        navigate("/login")
+    }
+    
+
+
     return (
         <div className="footer " style={{ background: "#d4a74f" }}>
 
@@ -18,33 +28,33 @@ export const Footer = () => {
                 <div className="flex">
 
                     <section className="flex-content padding_1x">
-                        <h3>Quick Links</h3>
-                        <a href="#">Services</a>
-                        <a href="#">Projects</a>
-                        <a href="#">Procurement</a>
-                        <a href="#">Our team</a>
+                        <h3>For You</h3>
+                        <a href="#">Careers</a>
+                        <a href="#">Procurment</a>
+
                     </section>
                     <section className="flex-content padding_1x">
-                        <h3>Features</h3>
-                        <a href="#">Jobs</a>
-                        <a href="#">Brand Assets</a>
-                        <a href="#">Investor Relations</a>
-                        <a href="#">Terms of Service</a>
+                        <h3>SERVICES</h3>
+                        <a href="#">Construction</a>
+                        <a href="#">Manufacturing</a>
+                        <a href="#">Sustainanbility</a>
+                        <a href="#">Leasing</a>
+                        <a href="#">Management</a>
                     </section>
                     <section className="flex-content padding_1x">
-                        <h3>Resources</h3>
-                        <a href="#">Guides</a>
-                        <a href="#">Research</a>
-                        <a href="#">Experts</a>
-                        <a href="#">Agencies</a>
+                        <h3>PROJECTS</h3>
+                        <a href="#">Havana, Khomas</a>
+                        <a href="#">Ongwediva Hostel</a>
+                        <a href="#">Ongwendiva School</a>
                     </section>
                     <section className="flex-content padding_1x">
-                        <h3>Newsletter</h3>
-                        <p>You can trust us. we only send promo offers,</p>
+                        <h3>SUBSCRIBE</h3>
+                        <p>Subscribe to with your email to get latest updates</p>
                         <fieldset className="fixed_flex">
-                            <input type="email" name="newsletter" placeholder="Your Email Address" />
-                            <button className="btn btn_2">Subscribe</button>
+                            <input style={{ color: "black" }} type="email" name="newsletter" placeholder="Your Email Address" />
+                            <button  className="btn btn_2">Subscribe</button>
                         </fieldset>
+                    <button onClick={login} className="uk-margin btn btn-success w-100">Login</button>
                     </section>
                 </div>
                 <div className="flex">

@@ -4,8 +4,27 @@
         text-align: center;
         height: 100%;
     }
-    .a:hover{
+
+    .a:hover {
         border: solid 2px white
+    }
+
+    .icon-facebook,
+    .icon-twitter,
+    .icon-linkedin {
+        color: white;
+    }
+
+    .icon-facebook:hover {
+        color: #1877f2;
+    }
+
+    .icon-twitter:hover {
+        color: #1d9bf0;
+    }
+
+    .icon-linkedin:hover {
+        color: #0077b5;
     }
 
     div.demo span {

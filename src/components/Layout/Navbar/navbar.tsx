@@ -16,9 +16,13 @@ import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import DesignServicesRoundedIcon from '@mui/icons-material/DesignServicesRounded';
 import AccountTreeRoundedIcon from '@mui/icons-material/AccountTreeRounded';
 import TipsAndUpdatesRoundedIcon from '@mui/icons-material/TipsAndUpdatesRounded';
+import InventoryRoundedIcon from '@mui/icons-material/InventoryRounded';
 import GroupsRoundedIcon from '@mui/icons-material/GroupsRounded';
 import CallEndRoundedIcon from '@mui/icons-material/CallEndRounded';
-import InventoryRoundedIcon from '@mui/icons-material/InventoryRounded';
+import CloseIcon from '@mui/icons-material/Close';
+import CancelPresentationIcon from '@mui/icons-material/CancelPresentation';
+import logo from "../../assets/logo/logo1.png"
+import "./navbar.scss"
 
 type Anchor = 'right';
 
@@ -28,29 +32,34 @@ export const Navbar = () => {
     const navigate = useNavigate();
 
     const home = () => {
+        window.scrollTo(0, 0)
         navigate("/")
     }
     const services = () => {
+        window.scrollTo(0, 0)
         navigate("/services")
     }
     const projects = () => {
+        window.scrollTo(0, 0)
         navigate("/projects")
     }
     const procurement = () => {
+        window.scrollTo(0, 0)
         navigate("/procurement")
     }
     const vacancies = () => {
+        window.scrollTo(0, 0)
         navigate("/vacancies")
     }
     const team = () => {
+        window.scrollTo(0, 0)
         navigate("/teams")
     }
     const contact = () => {
+        window.scrollTo(0, 0)
         navigate("/contact-us")
     }
-    const login = () => {
-        navigate("/login")
-    }
+
 
 
 
@@ -85,11 +94,11 @@ export const Navbar = () => {
             onKeyDown={toggleDrawer(anchor, false)}
 
         >
-            <List style={{ margin: "2rem", marginTop: "6rem" }}>
+            <List style={{ margin: "1rem", marginTop: "6rem" }}>
                 <ListItem disablePadding>
                     <ListItemButton onClick={home}>
                         <ListItemIcon>
-                            {/* <InboxIcon /> */}
+                            <HomeRoundedIcon style={{ color: "#17532c" }} />
                         </ListItemIcon>
                         <ListItemText primary="Home" />
                     </ListItemButton>
@@ -97,7 +106,7 @@ export const Navbar = () => {
                 <ListItem disablePadding>
                     <ListItemButton onClick={services}>
                         <ListItemIcon>
-                            {/* <InboxIcon /> */}
+                            <DesignServicesRoundedIcon style={{ color: "#17532c" }} />
                         </ListItemIcon>
                         <ListItemText primary="Services" />
                     </ListItemButton>
@@ -105,7 +114,7 @@ export const Navbar = () => {
                 <ListItem disablePadding>
                     <ListItemButton onClick={projects}>
                         <ListItemIcon>
-                            {/* <InboxIcon /> */}
+                            <AccountTreeRoundedIcon style={{ color: "#17532c" }} />
                         </ListItemIcon>
                         <ListItemText primary="Projects" />
                     </ListItemButton>
@@ -113,7 +122,7 @@ export const Navbar = () => {
                 <ListItem disablePadding>
                     <ListItemButton onClick={procurement}>
                         <ListItemIcon>
-                            {/* <InboxIcon /> */}
+                            <InventoryRoundedIcon style={{ color: "#17532c" }} />
                         </ListItemIcon>
                         <ListItemText primary="Procurement" />
                     </ListItemButton>
@@ -121,7 +130,7 @@ export const Navbar = () => {
                 <ListItem disablePadding>
                     <ListItemButton onClick={vacancies}>
                         <ListItemIcon>
-                            {/* <InboxIcon /> */}
+                            <TipsAndUpdatesRoundedIcon style={{ color: "#17532c" }} />
                         </ListItemIcon>
                         <ListItemText primary="Vacancies" />
                     </ListItemButton>
@@ -129,7 +138,7 @@ export const Navbar = () => {
                 <ListItem disablePadding>
                     <ListItemButton onClick={team}>
                         <ListItemIcon>
-                            {/* <InboxIcon /> */}
+                            <GroupsRoundedIcon style={{ color: "#17532c" }} />
                         </ListItemIcon>
                         <ListItemText primary="Our Team" />
                     </ListItemButton>
@@ -137,17 +146,9 @@ export const Navbar = () => {
                 <ListItem disablePadding>
                     <ListItemButton onClick={contact}>
                         <ListItemIcon>
-                            {/* <InboxIcon /> */}
+                            <CallEndRoundedIcon style={{ color: "#17532c" }} />
                         </ListItemIcon>
                         <ListItemText primary="Contact" />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton onClick={home}>
-                        <ListItemIcon>
-                            {/* <InboxIcon /> */}
-                        </ListItemIcon>
-                        <ListItemText primary="Login" />
                     </ListItemButton>
                 </ListItem>
             </List>
@@ -156,24 +157,24 @@ export const Navbar = () => {
 
 
     return (
-        <>
+        <div className="navigation">
             <div style={{ borderTop: "solid white 1px", borderBottom: "solid white 1px", color: "black", marginTop: "2rem" }} className="uk-visible@m navigation" uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light" >
                 <nav className="uk-navbar-container uk-margin uk-navbar-transparent " uk-navbar="mode: click">
                     <div className="uk-navbar-center center">
-                        <ul className="uk-navbar-nav uk-text-lighter" style={{ marginLeft: "rem" }}>
-                            <li onClick={home} className=""><a style={{ fontWeight: "600", fontSize: "12px" }} href="#"> <HomeRoundedIcon /> Home</a></li>
-                            <li onClick={services}><a style={{ fontWeight: "600", fontSize: "12px" }} href="#"> <DesignServicesRoundedIcon /> Services</a></li>
-                            <li onClick={projects}><a style={{ fontWeight: "600", fontSize: "12px" }} href="#"> <AccountTreeRoundedIcon /> Projects</a></li>
-                            <li onClick={procurement}><a style={{ fontWeight: "600", fontSize: "12px" }} href="#"> <InventoryRoundedIcon /> Procurement</a></li>
-                            <li onClick={vacancies}><a style={{ fontWeight: "600", fontSize: "12px" }} href="#"> <TipsAndUpdatesRoundedIcon /> Careers</a></li>
-                            <li onClick={team}><a style={{ fontWeight: "600", fontSize: "12px" }} href="#"> <GroupsRoundedIcon /> Our Team</a></li>
-                            <li onClick={contact}><a style={{ fontWeight: "600", fontSize: "12px" }} href="#"> <CallEndRoundedIcon />Contact</a></li>
+                        <ul className="uk-navbar-nav uk-text-lighter" style={{ marginLeft: "rem", marginBottom:"0rem", marginTop:"0rem" }}>
+                            <li  onClick={home} className=""><a style={{ fontWeight: "600", fontSize: "19px" }} href="#"> Home |</a></li>
+                            <li onClick={services}><a style={{ fontWeight: "600", fontSize: "19px" }} href="#">  Services |</a></li>
+                            <li onClick={projects}><a style={{ fontWeight: "600", fontSize: "19px" }} href="#"> Projects |</a></li>
+                            <li onClick={procurement}><a style={{ fontWeight: "600", fontSize: "19px" }} href="#">  Procurement |</a></li>
+                            <li onClick={vacancies}><a style={{ fontWeight: "600", fontSize: "19px" }} href="#">  Careers |</a></li>
+                            <li onClick={team}><a style={{ fontWeight: "600", fontSize: "19px" }} href="#">  Our Team |</a></li>
+                            <li onClick={contact}><a style={{ fontWeight: "600", fontSize: "19px" }} href="#">Contact |</a></li>
                         </ul>
                         <div className="uk-navbar-right">
                             <ul className="uk-navbar-nav">
                                 <li style={{ marginLeft: "6rem" }} className="#">
                                     <a href="#">
-                                        <button onClick={login} style={{ fontSize: "14px" }} className="loginBtn">Login</button>
+                                        {/* <button onClick={login} style={{ fontSize: "14px" }} className="loginBtn">Login</button> */}
                                     </a>
                                 </li>
                             </ul>
@@ -181,7 +182,7 @@ export const Navbar = () => {
                     </div>
                 </nav>
             </div>
-            <div className="uk-hidden@m" uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark" style={{ color: "black" }}>
+            <div className="uk-hidden@m " uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark" style={{ color: "black", width: "100%" }}>
                 <nav className="uk-navbar-container uk-margin uk-navbar-transparent " uk-navbar="mode: click">
                     <div className="uk-navbar center">
                         {(['right'] as const).map((anchor) => (
@@ -189,11 +190,18 @@ export const Navbar = () => {
                                 <Button onClick={toggleDrawer(anchor, true)}>
                                     <MenuIcon className="burger" style={{ color: "#d4a74f", fontSize: "3rem" }} />
                                 </Button>
+
                                 <Drawer
                                     anchor={anchor}
                                     open={state[anchor]}
                                     onClose={toggleDrawer(anchor, false)}
                                 >
+                                    <div className="container">
+                                        <Button style={{ width: "20%" }} onClick={toggleDrawer(anchor, false)}>
+                                            <CancelPresentationIcon style={{ color: "#17532c", fontSize: "38px" }} />
+                                        </Button>
+                                        <img style={{ height: "50px", marginLeft: "8.5rem" }} className="logo" src={logo} alt="" />
+                                    </div>
                                     {list(anchor)}
                                 </Drawer>
                             </React.Fragment>
@@ -205,6 +213,6 @@ export const Navbar = () => {
             </div>
 
 
-        </>
+        </div>
     )
 }

@@ -1,4 +1,11 @@
 .navigation {
+
+    .border-right{
+        border-right: 2px solid white;
+        
+    }
+
+  
     nav {
         .center {
             ul {
@@ -16,16 +23,20 @@
 
     &.uk-sticky-below {
         nav {
+
+            background-color: #d4a74f;
+
             .center {
                 ul {
                     li {
                         a {
-                            color: black;
+                            color: #17532c;
                         }
                     }
                 }
-                .burgur{
-                    color:white
+
+                .burgur {
+                    color: white
                 }
             }
 

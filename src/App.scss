@@ -1,5 +1,26 @@
 @font-face {
-    font-family: "Warming";   /*Can be any text*/
-    src: local("Warming-Regular"),
-      url("./components/Warming\ TTF/Warming-Regular.ttf") format("truetype");
-  }
+  font-family: primary; 
+  src: url(../src/components/warming/WarmingWOFF/Warming-Bold.woff);
+}
+@font-face {
+  font-family: subheading;
+  src: url(../src/components/warming/WarmingOTF/Warming-Regular.otf);
+}
+@font-face {
+  font-family: paragraph;
+  src: url(../src/components/warming/WarmingWOFF/Warming-Regular.woff);
+}
+
+
+$font: primary;
+$heading-font: subheading;
+$paragraph-font: paragraph;
+
+
+$header-font-size: 21px;
+$sub-header-font-size: 28px;
+$paragraph-font-size: 32px;
+
+
+$primary-color: primary;
+$secondary-color: primary;

@@ -25,7 +25,7 @@ export const Vacancies = () => {
                     </div>
                 </section>
             </motion.div>
-            <div className="bg-white p-5">
+            <div className="bg-white" style={{ padding: "8rem" }}>
                 <h1 className="">Available Vacancies</h1>
                 <p className="text-danger ">No  available Vancancies at the moment</p>
             </div>
