@@ -157,12 +157,12 @@ export const Navbar = () => {
 
 
     return (
-        <div className="navigation">
-            <div style={{ borderTop: "solid white 1px", borderBottom: "solid white 1px", color: "black", marginTop: "2rem" }} className="uk-visible@m navigation" uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light" >
+        <div className="navigation" >
+            <div style={{ borderTop: "solid white 2px", borderBottom: "solid white 2px", color: "black", marginTop: "2rem" }} className="uk-visible@m navigation" uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light" >
                 <nav className="uk-navbar-container uk-margin uk-navbar-transparent " uk-navbar="mode: click">
                     <div className="uk-navbar-center center">
-                        <ul className="uk-navbar-nav uk-text-lighter" style={{ marginLeft: "rem", marginBottom:"0rem", marginTop:"0rem" }}>
-                            <li  onClick={home} className=""><a style={{ fontWeight: "600", fontSize: "19px" }} href="#"> Home |</a></li>
+                        <ul className="uk-navbar-nav uk-text-lighter" style={{ marginLeft: "rem", marginBottom: "0rem", marginTop: "0rem" }}>
+                            <li onClick={home} className=""><a style={{ fontWeight: "600", fontSize: "19px" }} href="#"> Home |</a></li>
                             <li onClick={services}><a style={{ fontWeight: "600", fontSize: "19px" }} href="#">  Services |</a></li>
                             <li onClick={projects}><a style={{ fontWeight: "600", fontSize: "19px" }} href="#"> Projects |</a></li>
                             <li onClick={procurement}><a style={{ fontWeight: "600", fontSize: "19px" }} href="#">  Procurement |</a></li>
@@ -170,15 +170,6 @@ export const Navbar = () => {
                             <li onClick={team}><a style={{ fontWeight: "600", fontSize: "19px" }} href="#">  Our Team |</a></li>
                             <li onClick={contact}><a style={{ fontWeight: "600", fontSize: "19px" }} href="#">Contact |</a></li>
                         </ul>
-                        <div className="uk-navbar-right">
-                            <ul className="uk-navbar-nav">
-                                <li style={{ marginLeft: "6rem" }} className="#">
-                                    <a href="#">
-                                        {/* <button onClick={login} style={{ fontSize: "14px" }} className="loginBtn">Login</button> */}
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </nav>
             </div>

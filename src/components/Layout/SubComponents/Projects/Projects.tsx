@@ -24,17 +24,31 @@ import img17 from "../../../assets/projects/Ondjandjo/img17.png"
 import img18 from "../../../assets/projects/Ondjandjo/img18.png"
 import "aos/dist/aos.css"
 import AOS from "aos"
+import { useNavigate } from "react-router-dom"
 
 export const Project = () => {
+
+    const navigate = useNavigate();
+
+    const toWindhoek = () => {
+        window.scrollTo(0, 0)
+        navigate("/windhoek")
+    }
+    const toEluwa = () => {
+        window.scrollTo(0, 0)
+        navigate("/eluwa")
+    }
+    const toOshana = () => {
+        window.scrollTo(0, 0)
+        navigate("/oshana")
+    }
 
     useEffect(() => {
         AOS.init({ duration: 1000 })
     }, []);
 
     return (
-        <div className="projects"
-
-        >
+        <div className="projects" >
             <motion.div className="landingPage"
                 initial={{ x: "-100vw" }}
                 animate={{ x: 0 }}
@@ -57,122 +71,73 @@ export const Project = () => {
             </motion.div>
             <div className="uk-section bg-white">
 
-                <div className="row p-5">
+                {/* <div className="row p-5 py-5">
                     <div className="d-none d-lg-block border-line"></div>
-                    <div className="header-container col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div onClick={toWindhoek} className="header-container col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <img className="img" src={img2} alt="" style={{ width: "100%" }} />
                     </div>
-                    <div className="col-lg-6 ol-lg-6 col-md-6 col-sm-12 col-xs-12 img-container">
-                        <img className="img" src={img18} alt="" style={{ width: "100%" }} />
-                    </div>
-                </div>
-                <div className="row p-5">
-                    <div className="d-none d-lg-block border-line"></div>
-                    <div className="header-container col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div onClick={toEluwa} className="col-lg-6 ol-lg-6 col-md-6 col-sm-12 col-xs-12 img-container">
                         <img className="img" src={img10} alt="" style={{ width: "100%" }} />
                     </div>
-                    <div className="col-lg-6 ol-lg-6 col-md-6 col-sm-12 col-xs-12 img-container">
-                        {/* <img className="img" src={img1} alt="" style={{ width: "100%" }} /> */}
+                    <div className="d-none d-lg-block border-line"></div>
+
+                    <div onClick={toOshana} className="header-container col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-1">
+                        <img className="img" src={img18} alt="" style={{ width: "100%" }} />
+                    </div>
+                </div> */}
+
+                <div className="cards">
+                    <div className="scroll">
+                        <div className="container one">
+                            <div className="grid-cards">
+                                <div className="card">
+                                    <img src={img2} alt="img-1" title="card image" />
+                                    <div className="card-body">
+                                        <h3 className="title-card">
+                                            HAVANA, KHOMAS, WINDHOEK
+                                        </h3>
+                                    </div>
+                                    <div className="card-footer">
+                                        <a onClick={toWindhoek} href="#">View Project</a>
+                                    </div>
+                                </div>
+                                <div className="card">
+                                    <img src={img10} alt="img-2" title="card image" />
+                                    <div className="card-body">
+                                        <h3 className="title-card">
+                                            ONGWEDIVA, OSHANA, (ELUWA)
+                                        </h3>
+                                    </div>
+                                    <div className="card-footer">
+                                        <a onClick={toEluwa} href="#">View Project</a>
+                                    </div>
+                                </div>
+                                <div className="card">
+                                    <img src={img18} alt="img-3" title="card image" />
+                                    <div className="card-body">
+                                        <h3 className="title-card">
+                                            ONGWEDIVA, OSHANA (oNDJANDJO)
+                                        </h3>
+                                    </div>
+                                    <div className="card-footer">
+                                        <a onClick={toOshana} href="#">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
 
-        </div>
+        </div >
     )
 }
 
 
 {/* 
             <div className="cards">
-                <section className="Hakana d-none d-lg-block">
-                    <div
-                        data-aos="fade-up"
-                        className="" style={{ marginBottom: "0", padding: "5rem", background: "#d4a74f", color: "#17532c" }} >
-                        <h2 className="text-center" style={{ color: "#17532c" }}>HAVANA, KHOMAS, WINDHOEK</h2>
-                        <img className="img-fluid w-100" src={line1} alt="" />
-                    </div>
-                    <div className="row bg-white w-100 text-center">
-                        <div className="col-10 details">
-                            <div data-aos="fade-up" className="project-info mb-4">
-                                <h5 className="" style={{ fontSize: "14px", color: "#17532c" }} >PROJECT SCOPE</h5>
-                                <h3 className="" style={{ color: "#17532c" }}>Construction of Havana Senior Secondary School</h3>
-                            </div>
-                            <div data-aos="fade-up" className="project-info mb-4">
-                                <h5 className="" style={{ fontSize: "14px", color: "#17532c" }}>CLIENT</h5>
-                                <h3 className="" style={{ color: "#17532c" }}>Ministry of Education, Arts and Culture</h3>
-                            </div>
-                            <div data-aos="fade-up" className="project-info mb-4">
-                                <h5 className="" style={{ fontSize: "14px", color: "#17532c" }}>STATUS</h5>
-                                <h3 className="" style={{ color: "#17532c" }}>Completed -November 2022</h3>
-                            </div>
-                            <div data-aos="fade-up" className="project-info mb-4">
-                                <h5 className="" style={{ fontSize: "14px", color: "#17532c" }}>ARCHITECT/DESIGNER</h5>
-                                <h3 className="" style={{ color: "#17532c" }}>Manda Bakkes Architects</h3>
-                            </div>
-                            <div data-aos="fade-up" className="project-info mb-4">
-                                <h5 className="" style={{ fontSize: "14px", color: "#17532c" }}>APPROX, PROJECT VALUE</h5>
-                                <h3 className="" style={{ color: "#17532c" }}>17 000 000,00</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="gallery-image">
-                        <div data-aos="flip-left" className="img-box">
-                            <img src={img1} alt="" />
-                            <div className="transparent-box">
-                                <div className="caption">
-                                    <p>title</p>
-                                    <p className="opacity-low">Description</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div data-aos="flip-left" className="img-box">
-                            <img src={img2} alt="" />
-                            <div className="transparent-box">
-                                <div className="caption">
-                                    <p>title</p>
-                                    <p className="opacity-low">Description</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div data-aos="flip-left" className="img-box">
-                            <img src={img3} alt="" />
-                            <div className="transparent-box">
-                                <div className="caption">
-                                    <p>title</p>
-                                    <p className="opacity-low">Description</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div data-aos="flip-left" className="img-box">
-                            <img src={img4} alt="" />
-                            <div className="transparent-box">
-                                <div className="caption">
-                                    <p>title</p>
-                                    <p className="opacity-low">Description</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div data-aos="flip-left" className="img-box">
-                            <img src={img5} alt="" />
-                            <div className="transparent-box">
-                                <div className="caption">
-                                    <p>title</p>
-                                    <p className="opacity-low">Description</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div data-aos="flip-left" className="img-box">
-                            <img src={img6} alt="" />
-                            <div className="transparent-box">
-                                <div className="caption">
-                                    <p>title</p>
-                                    <p className="opacity-low">Description</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
+             
 
                 <section className="Hakana d-block d-lg-none" style={{ marginTop: "10rem", background: "white" }}>
                     <div data-aos="fade-up" className="p-5" style={{ marginBottom: "0", background: "#d4a74f", color: "#17532c" }} >

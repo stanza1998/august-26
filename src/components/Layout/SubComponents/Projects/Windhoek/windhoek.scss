@@ -1,0 +1,28 @@
+.windhoek {
+    .con {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+        background: white;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .con img {
+        width: 100%;
+        display: block;
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+        transition: all 100ms ease-out;
+        border-radius: 2rem;
+        height: 20rem;
+    }
+
+    .con img:hover {
+        transform: scale(1.04);
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+    }
+
+
+}

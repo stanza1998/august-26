@@ -7,10 +7,10 @@ export const Footer = () => {
     const navigate = useNavigate()
 
     const login = () => {
-        window.scrollTo(0,0)
+        window.scrollTo(0, 0)
         navigate("/login")
     }
-    
+
 
 
     return (
@@ -28,44 +28,41 @@ export const Footer = () => {
                 <div className="flex">
 
                     <section className="flex-content padding_1x">
-                        <h3>For You</h3>
-                        <a href="#">Careers</a>
-                        <a href="#">Procurment</a>
+                        <h3 style={{ color: "#184e2b" }}>For You</h3>
+                        <a style={{ color: "#184e2b", fontWeight: "700" }} href="#">Careers</a>
+                        <a style={{ color: "#184e2b", fontWeight: "700" }} href="#">Procurment</a>
 
                     </section>
                     <section className="flex-content padding_1x">
-                        <h3>SERVICES</h3>
-                        <a href="#">Construction</a>
-                        <a href="#">Manufacturing</a>
-                        <a href="#">Sustainanbility</a>
-                        <a href="#">Leasing</a>
-                        <a href="#">Management</a>
+                        <h3 style={{ color: "#184e2b" }}>SERVICES</h3>
+                        <a style={{ color: "#184e2b", fontWeight: "700" }} href="#">Construction</a>
+                        <a style={{ color: "#184e2b", fontWeight: "700" }} href="#">Manufacturing</a>
+                        <a style={{ color: "#184e2b", fontWeight: "700" }} href="#">Sustainanbility</a>
+                        <a style={{ color: "#184e2b", fontWeight: "700" }} href="#">Leasing</a>
+                        <a style={{ color: "#184e2b", fontWeight: "700" }} href="#">Management</a>
                     </section>
                     <section className="flex-content padding_1x">
-                        <h3>PROJECTS</h3>
-                        <a href="#">Havana, Khomas</a>
-                        <a href="#">Ongwediva Hostel</a>
-                        <a href="#">Ongwendiva School</a>
+                        <h3 style={{ color: "#184e2b" }}>PROJECTS</h3>
+                        <a style={{ color: "#184e2b", fontWeight: "700" }} href="#">Havana, Khomas</a>
+                        <a style={{ color: "#184e2b", fontWeight: "700" }} href="#">Ongwediva Hostel</a>
+                        <a style={{ color: "#184e2b", fontWeight: "700" }} href="#">Ongwendiva School</a>
                     </section>
                     <section className="flex-content padding_1x">
-                        <h3>SUBSCRIBE</h3>
-                        <p>Subscribe to with your email to get latest updates</p>
-                        <fieldset className="fixed_flex">
-                            <input style={{ color: "black" }} type="email" name="newsletter" placeholder="Your Email Address" />
-                            <button  className="btn btn_2">Subscribe</button>
-                        </fieldset>
-                    <button onClick={login} className="uk-margin btn btn-success w-100">Login</button>
+                        <h3 style={{ color: "#184e2b" }}>Contact</h3>
+                        <p style={{ color: "#184e2b", fontWeight: "700" }}>info@august26ubm.com</p>
+                        <p style={{ color: "#184e2b", fontWeight: "700" }}>Tel +264 61 243 325</p>
+                        <p style={{ color: "#184e2b", fontWeight: "700" }}>info@august26ubm.com</p>
                     </section>
                 </div>
                 <div className="flex">
                     <section className="flex-content padding_1x">
-                        <p>Copyright ©2023 All rights reserved || august 26 construction</p>
+                        <p style={{ color: "#184e2b", fontWeight: "700" }}>Copyright ©2023 All rights reserved || august 26 construction</p>
                     </section>
                     <section className="flex-content padding_1x">
-                        <a href="#"><i className="fa fa-facebook"></i></a>
-                        <a href="#"><i className="fa fa-twitter"></i></a>
-                        <a href="#"><i className="fa fa-dribbble"></i></a>
-                        <a href="#"><i className="fa fa-linkedin"></i></a>
+                        <a style={{ color: "white" }} href="#"><i className="fa fa-facebook"></i></a>
+                        <a style={{ color: "white" }} href="#"><i className="fa fa-twitter"></i></a>
+                        <a style={{ color: "white" }} href="#"><i className="fa fa-dribbble"></i></a>
+                        <a style={{ color: "white" }} href="#"><i className="fa fa-linkedin"></i></a>
                     </section>
                 </div>
             </footer>

@@ -18,6 +18,9 @@ import { Procurement } from './components/LoggedIn/Procurement/procurement';
 import { Vacancies } from './components/LoggedIn/Vacancies/vacancies';
 import { Setting } from './components/LoggedIn/Settings/setting';
 import { Subscribers } from './components/LoggedIn/Subscribers/subscribers';
+import { Windhoek } from './components/Layout/SubComponents/Projects/Windhoek/windhoek';
+import { Eluwa } from './components/Layout/SubComponents/Projects/Eluwa/Eluwa';
+import { Oshana } from './components/Layout/SubComponents/Projects/Oshana/oshana';
 
 
 const store = new AppStore();
@@ -38,9 +41,11 @@ function App() {
           <Route path="vacancies" element={<Vacancies />} />
           <Route path="settings" element={<Setting />} />
           <Route path="subscribers" element={<Subscribers />} />
-
         </Route>
         <Route path="*" element={<Layout />} />
+        <Route path="windhoek" element={<Windhoek />} />
+        <Route path="eluwa" element={<Eluwa />} />
+        <Route path="oshana" element={<Oshana />} />
         {/* <Route path="sign-up" element={<SignUp />} /> */}
       </Routes>
     </AppContext.Provider>

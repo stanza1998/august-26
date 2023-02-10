@@ -14,12 +14,14 @@ import VideoBg from "../../components/assets/videoBg.mp4"
 import { Vacancies } from "./SubComponents/Vacancies/Vacancies"
 import { Contact } from "./SubComponents/Contact/Contact"
 import { Login } from "./SubComponents/Login/Login"
+import ScrollToTop from "../ScrollTop/scrollToTop"
 
 export const Layout = () => {
     return (
         <>
 
 
+            <ScrollToTop />
             <div className="main">
 
                 <video src={VideoBg} autoPlay loop muted />
